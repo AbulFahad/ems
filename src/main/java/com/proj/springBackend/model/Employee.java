@@ -21,4 +21,5 @@ public class Employee {
     private String lastName;
     @Column(name = "email")
     private String email;
+
 }
