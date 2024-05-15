@@ -8,13 +8,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBackendApplication implements CommandLineRunner {
+// public class SpringBackendApplication implements CommandLineRunner {
+public class SpringBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBackendApplication.class, args);
 	}
 
-	@Autowired
+	// Below code is required only for first run.
+/*	@Autowired
 	private EmployeeRepository employeeRepository;
 	@Override
 	public void run(String... args) throws Exception {
@@ -24,5 +26,5 @@ public class SpringBackendApplication implements CommandLineRunner {
 		employee.setEmail("fn@ln");
 
 		employeeRepository.save(employee);
-	}
+	}*/
 }
